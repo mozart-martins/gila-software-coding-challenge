@@ -1,6 +1,6 @@
 # Welcome to Gila Software Coding Challenge!
 
-This is a coding challenge from **Gila Software**. I chose Python to fulfill this mission. My idea is to copy the instructions here and then create diagrams to illustrate and project my understanding.
+This is a coding challenge from **Gila Software**. I chose Python to fulfill this mission. My idea is to copy the instructions here and then create diagrams to illustrate and design my understanding.
 
 After a good understanding and a reasonable design of the small project, I will move on to the implementation of the solution.
 
@@ -26,7 +26,7 @@ No notification will actually be sent or the need to communicate with any extern
 register the sent notification in an archive of Logs or in a database.
 
 In the log, it will need to save all the information necessary to identify that the notification has been
-sent correctly to the respective subscriber,such asthe type of message, type of notification, user data,
+sent correctly to the respective subscriber,such as the type of message, type of notification, user data,
 time, etc.
 
 No user administration is required, you can use a Mock of users in the source code, and they must
@@ -52,3 +52,15 @@ We will evaluate:
 • Manage requests to the Server by RESTful APIs.  
 • Unit testing  
 • For manual tests, register at least 3 users with different configurations.
+
+# Basic Design
+
+Em uma leitura inicial, temos CATEGORIAS e CANAIS/TIPOS de comunicacao onde USUARIOS se registram e recebem MENSAGEMS (tem dentre outros os atributos categoria e tipo).
+
+Nao havera envio de mensagens, mas apenas o registro do envio em um arquivo de logs (optamos pelo arquivo em detrimento do banco de dados). Nesse log, devera haver o registro de todos os dados da mensagem, o id do usuario e um timestamp.
+
+Cada tipo de envio de mensagem (SMS, e-mail e push notification) deve ter sua propria dinamica de envio.
+
+## Class Diagram
+
+
