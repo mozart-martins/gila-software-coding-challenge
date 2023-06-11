@@ -44,12 +44,12 @@ As user interface you need to display 2 main elements.
    • **Message**. Text area, only validate that the message is not empty.
 2. **Log history**. A list of all records in the log, sorted from newest to oldest.
 
-We will evaluate:
+We will evaluate:  
 
-• Architecture of the application and software design patterns.
-• OOP and Scalability (ready to add more types of notifications).
-• Manage requests to the Server by RESTful APIs.
-• Unit testing
+• Architecture of the application and software design patterns.  
+• OOP and Scalability (ready to add more types of notifications).  
+• Manage requests to the Server by RESTful APIs.  
+• Unit testing  
 • For manual tests, register at least 3 users with different configurations.
 
 # Basic Design
