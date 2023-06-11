@@ -84,7 +84,7 @@ class User{
 	-email: String
 	-phoneNumber: int
 	-Subscribed: List~Category~
-	-Channels: List~hannel~
+	-Channels: List~Channel~
 }
 class Message{
 	-id: int
