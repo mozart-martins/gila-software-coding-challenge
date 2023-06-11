@@ -57,7 +57,9 @@ We will evaluate:
 
 Em uma leitura inicial, temos CATEGORIAS e CANAIS/TIPOS de comunicacao onde USUARIOS se registram e recebem MENSAGEMS (tem dentre outros os atributos categoria e tipo).
 
-Nao havera envio de mensagens, mas apenas o registro do envio em um arquivo de logs (optamos pelo arquivo em detrimento do banco de dados). Nesse log, devera haver o registro de todos os dados da mensagem, o id do usuario e um timestamp. Estes LOGs representam as notificacoes.
+Nao havera envio de mensagens, mas apenas o registro do envio em um arquivo de logs (optamos pelo arquivo em detrimento do banco de dados). Nesse log, devera haver o registro de todos os dados da mensagem, o id do usuario e um timestamp. 
+
+Estes LOGs representam as notificacoes. Meu entendimento eh de que nao serao gravados os ids das mensagens e usuarios, mas os dados diretamente no arquivo de logs.
 
 Cada tipo de envio de mensagem (SMS, e-mail e push notification) deve ter sua propria dinamica de envio.
 
