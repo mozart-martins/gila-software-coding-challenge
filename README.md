@@ -39,10 +39,10 @@ have the following information:
 
 As user interface you need to display 2 main elements.
 
-1. **Submission form**. A simple form to send the message, which will have 2 fields:
-   • **Category**. List of available categories.
-   • **Message**. Text area, only validate that the message is not empty.
-2. **Log history**. A list of all records in the log, sorted from newest to oldest.
+1. **Submission form**. A simple form to send the message, which will have 2 fields:  
+   • **Category**. List of available categories.  
+   • **Message**. Text area, only validate that the message is not empty.  
+2. **Log history**. A list of all records in the log, sorted from newest to oldest.  
 
 We will evaluate:  
 
