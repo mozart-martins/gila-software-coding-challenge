@@ -4,22 +4,20 @@ This is a coding challenge from **Gila Software**. I chose Python to fulfill thi
 
 After a good understanding and a reasonable design of the small project, I will move on to the implementation of the solution.
 
-
 # Notification Test (Code Challenge)
-
 
 We have to create a notification system that has the ability to receive a message and depending on
 the category and subscribers, notify these users in the channels they are registered.
 
-It will be **3** message categories:  
-▪ Sports  
-▪ Finance  
+It will be **3** message categories:
+▪ Sports
+▪ Finance
 ▪ Movies
 
 And there will be **3 types of notifications**, each type should have its own class to manage the logic of
-sending the message independently.  
-▪ SMS  
-▪ E-Mail  
+sending the message independently.
+▪ SMS
+▪ E-Mail
 ▪ Push Notification
 
 No notification will actually be sent or the need to communicate with any external APIs, only will
@@ -30,38 +28,43 @@ sent correctly to the respective subscriber,such as the type of message, type of
 time, etc.
 
 No user administration is required, you can use a Mock of users in the source code, and they must
-have the following information:  
+have the following information:
 
-• ID  
-• Name  
-• Email  
-• Phone number  
-• Subscribed [ ] here you need to list all the categories where the user is subscribed  
+• ID
+• Name
+• Email
+• Phone number
+• Subscribed [ ] here you need to list all the categories where the user is subscribed
 • Channels [ ] a list of the notification's channels (SMS | E-Mail | Push Notification)
 
-As user interface you need to display 2 main elements.  
-1. **Submission form**. A simple form to send the message, which will have 2 fields:  
-• **Category**. List of available categories.  
-• **Message**. Text area, only validate that the message is not empty.  
-2. **Log history**. A list of all records in the log, sorted from newest to oldest.  
+As user interface you need to display 2 main elements.
 
-We will evaluate:  
+1. **Submission form**. A simple form to send the message, which will have 2 fields:
+   • **Category**. List of available categories.
+   • **Message**. Text area, only validate that the message is not empty.
+2. **Log history**. A list of all records in the log, sorted from newest to oldest.
 
-• Architecture of the application and software design patterns.  
-• OOP and Scalability (ready to add more types of notifications).  
-• Manage requests to the Server by RESTful APIs.  
-• Unit testing  
+We will evaluate:
+
+• Architecture of the application and software design patterns.
+• OOP and Scalability (ready to add more types of notifications).
+• Manage requests to the Server by RESTful APIs.
+• Unit testing
 • For manual tests, register at least 3 users with different configurations.
 
 # Basic Design
 
 Em uma leitura inicial, temos CATEGORIAS e CANAIS/TIPOS de comunicacao onde USUARIOS se registram e recebem MENSAGEMS (tem dentre outros os atributos categoria e tipo).
 
-Nao havera envio de mensagens, mas apenas o registro do envio em um arquivo de logs (optamos pelo arquivo em detrimento do banco de dados). Nesse log, devera haver o registro de todos os dados da mensagem, o id do usuario e um timestamp. 
+Nao havera envio de mensagens, mas apenas o registro do envio em um arquivo de logs (optamos pelo arquivo em detrimento do banco de dados). Nesse log, devera haver o registro de todos os dados da mensagem, o id do usuario e um timestamp.
 
 Estes LOGs representam as notificacoes. Meu entendimento eh de que nao serao gravados os ids das mensagens e usuarios, mas os dados diretamente no arquivo de logs.
 
 Cada tipo de envio de mensagem (SMS, e-mail e push notification) deve ter sua propria dinamica de envio.
+
+## Use case
+
+![Notification System Use Case](assets/use_case.jpg)
 
 ## Class Diagram
 
