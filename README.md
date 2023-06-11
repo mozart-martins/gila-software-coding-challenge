@@ -65,4 +65,32 @@ Cada tipo de envio de mensagem (SMS, e-mail e push notification) deve ter sua pr
 
 ## Class Diagram
 
-
+```mermaid
+classDiagram
+Channel <|-- User
+Category <|-- User
+Category <|-- Message
+class Channel{
+	-id: int
+	-description: String
+}
+class Category{
+	-id: int
+	-description: String
+}
+class User{
+	-id: int
+	-name: String
+	-email: String
+	-phoneNumber: int
+	-Subscribed: List<Category>
+	-Channels: List<Channel>
+}
+class Message{
+	-id: int
+	-content: String
+}
+class Notification{
+	-id: int
+}
+```
