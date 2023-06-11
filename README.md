@@ -1,6 +1,8 @@
 # Welcome to Gila Software Coding Challenge!
 
-This is a coding challenge from **Gila Software**. I chose Python to acomplish this mission. My idea is to copy the instructions here and then design diagrams to ilustrate and design my understanding.
+This is a coding challenge from **Gila Software**. I chose Python to fulfill this mission. My idea is to copy the instructions here and then create diagrams to illustrate and project my understanding.
+
+After a good understanding and a reasonable design of the small project, I will move on to the implementation of the solution.
 
 
 # Notification Test (Code Challenge)
