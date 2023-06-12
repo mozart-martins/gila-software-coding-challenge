@@ -4,7 +4,7 @@ This is a coding challenge from **Gila Software**. I chose Python to fulfill thi
 
 After a good understanding and a reasonable design of the small project, I will move on to the implementation of the solution.
 
-# Notification Test (Code Challenge)
+# Notification Test (Coding Challenge)
 
 We have to create a notification system that has the ability to receive a message and depending on
 the category and subscribers, notify these users in the channels they are registered.
