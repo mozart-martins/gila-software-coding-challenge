@@ -1,0 +1,18 @@
+{
+	"info": {
+		"_postman_id": "76f1d5ad-3952-476b-bd43-e2c9425260c6",
+		"name": "Message System",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27052182"
+	},
+	"item": [
+		{
+			"name": "Message",
+			"request": {
+				"method": "POST",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
