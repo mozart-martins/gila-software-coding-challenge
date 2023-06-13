@@ -93,7 +93,4 @@ class Message{
 	-id: int
 	-content: String
 }
-class Notification{
-	-id: int
-}
 ```
