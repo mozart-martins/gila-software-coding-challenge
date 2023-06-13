@@ -98,10 +98,10 @@ class Message{
 Follow the steps:
 
 ```bash
-$ git clone https://github.com/mozart-martins/gila-software-coding-challenge.git
-$ cd gila-software-coding-challenge.git
-$ python -m venv venv
-$ source ./venv/bin/activate
-$ pip install -r requirements.txt
-$ python app.py
+git clone https://github.com/mozart-martins/gila-software-coding-challenge.git
+cd gila-software-coding-challenge.git
+python -m venv venv
+source ./venv/bin/activate
+pip install -r requirements.txt
+python app.py
 ```
