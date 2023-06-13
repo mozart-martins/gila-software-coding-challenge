@@ -54,13 +54,11 @@ We will evaluate:
 
 # Basic Design
 
-Em uma leitura inicial, temos CATEGORIAS e CANAIS/TIPOS de comunicacao onde USUARIOS se registram e recebem MENSAGEMS (tem dentre outros os atributos categoria e tipo).
+In an initial reading, we have CATEGORIES and CHANNELS/TYPES of communication where USERS register and receive MESSAGES (has among others the category and type attributes).
 
-Nao havera envio de mensagens, mas apenas o registro do envio em um arquivo de logs (optamos pelo arquivo em detrimento do banco de dados). Nesse log, devera haver o registro de todos os dados da mensagem, o id do usuario e um timestamp.
+There will be no sending of messages, only the recording of the sending in a log file (we opted for the file instead of the database). In this log, there should be a record of all message data, the userid and a timestamp.
 
-Estes LOGs representam as notificacoes. Meu entendimento eh de que nao serao gravados os ids das mensagens e usuarios, mas os dados diretamente no arquivo de logs.
-
-Cada tipo de envio de mensagem (SMS, e-mail e push notification) deve ter sua propria dinamica de envio.
+These LOGs represent notifications. My understanding from the reading is that the ids of the messages and users will not be written, but the data directly in the log file.
 
 ## Use case
 
@@ -93,4 +91,16 @@ class Message{
 	-id: int
 	-content: String
 }
+```
+
+# Running the Project
+
+Follow the steps:
+
+```bash
+$ git clone https://github.com/mozart-martins/gila-software-coding-challenge.git
+$ cd gila-software-coding-challenge.git
+$ python -m venv venv
+$ pip install -r requirements.txt
+$ python app.py
 ```
